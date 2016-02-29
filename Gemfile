@@ -6,14 +6,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
-group :development, :test do
-  gem 'byebug'
-end
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
 gem 'bootstrap-sass'
+gem 'bootswatch-rails'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'omniauth'
@@ -23,6 +17,9 @@ gem 'pundit'
 gem 'simple_form'
 group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
   gem 'capistrano', '~> 3.0.1'
   gem 'capistrano-bundler'
   gem 'capistrano-rails', '~> 1.1.0'
@@ -35,9 +32,9 @@ group :development do
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'rb-fchange', :require=>false
-  gem 'rb-fsevent', :require=>false
-  gem 'rb-inotify', :require=>false
+  gem 'rb-fchange', require: false
+  gem 'rb-fsevent', require: false
+  gem 'rb-inotify', require: false
   gem 'spring-commands-rspec'
 end
 group :development, :test do
@@ -47,7 +44,9 @@ group :development, :test do
   gem 'pry-rescue'
   gem 'rspec-rails'
   gem 'rubocop'
+  gem 'reek'
   gem 'thin'
+  gem 'byebug'
 end
 group :test do
   gem 'capybara'

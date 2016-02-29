@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 body,
 html {
     width: 100%;
@@ -17,7 +17,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
