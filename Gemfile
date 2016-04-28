@@ -18,6 +18,8 @@ gem 'pg'
 gem 'pundit'
 gem 'simple_form'
 gem 'pronto', github: 'mmozuras/pronto'
+gem 'sidekiq'
+gem 'sinatra', require: false
 
 group :development do
   gem 'better_errors'
@@ -41,6 +43,7 @@ group :development do
   gem 'rb-inotify', require: false
   gem 'spring-commands-rspec'
 end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
@@ -52,6 +55,7 @@ group :development, :test do
   gem 'thin'
   gem 'byebug'
 end
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner'

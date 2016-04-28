@@ -10,6 +10,20 @@
     %header
       = render 'layouts/navigation'
     %main{:role => "main"}
-      = render 'layouts/messages'
-      = yield
+      .container
+        = render 'layouts/messages'
+        = yield
+
+  %footer
+    .container
+      .row
+        .col-lg-12
+          %ul.list-inline
+            %li
+              %a{:href => "#"} Home
+            %li.footer-menu-divider &sdot;
+            %li
+              %a{:href => "#about"} About
+          %p.copyright.text-muted.small Copyleft &copy; Bybro 2016.
+
   = javascript_include_tag 'application'
