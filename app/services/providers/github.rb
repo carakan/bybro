@@ -20,4 +20,32 @@ class Providers::Github
       provider: :github
     }
   end
+
+  def create_hook(full_repo_name, callback_endpoint)
+    hook = client.create_hook(
+      full_repo_name,
+      "web",
+      { url: callback_endpoint },
+      { events: ["pull_request"], active: true }
+    )
+
+    #if block_given?
+      #yield hook
+    #else
+      #hook
+    #end
+  rescue Octokit::UnprocessableEntity => error
+    if error.message.include? "Hook already exists"
+      true
+    else
+      raise
+    end
+  end
+
+
+  def create_webhook
+    github.create_hook(repo.full_github_name, builds_url) do |hook|
+      repo.update(hook_id: hook.id)
+    end
+  end
 end

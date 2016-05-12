@@ -1,7 +1,7 @@
-require 'sidekiq/web'
+#require 'sidekiq/web'
 
 Rails.application.routes.draw do
-  mount Sidekiq::Web, at: '/sidekiq'
+ # mount Sidekiq::Web, at: '/sidekiq'
 
   root to: 'repositories#index'
   get '/auth/:provider/callback' => 'sessions#create'
