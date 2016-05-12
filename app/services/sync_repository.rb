@@ -11,8 +11,9 @@ class SyncRepository
     Repository.transaction do
       api.repositories.each do |resource|
         attributes = api.class.extract_attributes(resource.to_hash)
-        repository = Repository.find_or_create_by(attributes)
-        repository.user = @credentials
+        repository = Repository.find_or_initialize_by(attributes)
+        repository.user_id = @credentials.id
+        repository.save
       end
     end
   end

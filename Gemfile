@@ -10,7 +10,6 @@ gem 'turbolinks', '~> 5.x'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'haml'
-gem 'high_voltage'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'omniauth-gitlab'
@@ -21,7 +20,7 @@ gem 'simple_form'
 gem 'pronto', github: 'mmozuras/pronto'
 gem 'sidekiq'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-# gem 'sinatra', require: false
+gem 'sinatra', require: false, github: 'sinatra/sinatra'
 
 group :development do
   #gem 'better_errors'

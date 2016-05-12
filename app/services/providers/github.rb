@@ -28,12 +28,6 @@ class Providers::Github
       { url: callback_endpoint },
       { events: ["pull_request"], active: true }
     )
-
-    #if block_given?
-      #yield hook
-    #else
-      #hook
-    #end
   rescue Octokit::UnprocessableEntity => error
     if error.message.include? "Hook already exists"
       true
