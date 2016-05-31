@@ -3,7 +3,7 @@ class BuildsController < ApplicationController
   #skip_before_action :authenticate, only: [:create]
 
   def create
-    debugger
+    
     head :ok
   end
 end

@@ -14,7 +14,7 @@ class Prontor
     end
   end
 
+  # probably impossible do witout fisical repo
   def review_with_pronto(diffs)
-debugger
   end
 end
