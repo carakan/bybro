@@ -21,7 +21,7 @@ class Providers::Github
     }
   end
 
-  def create_hook(full_repo_name, callback_endpoint)
+  def create_webhook(full_repo_name, callback_endpoint)
     hook = client.create_hook(
       full_repo_name,
       "web",
@@ -36,10 +36,7 @@ class Providers::Github
     end
   end
 
-
-  def create_webhook
-    github.create_hook(repo.full_github_name, builds_url) do |hook|
-      repo.update(hook_id: hook.id)
-    end
+  def pull_request(repo_name, number)
+    client.pull_request_files(repo_name, number)
   end
 end

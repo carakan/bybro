@@ -21,6 +21,7 @@ gem 'pronto', github: 'mmozuras/pronto'
 gem 'sidekiq'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sinatra', require: false, github: 'sinatra/sinatra'
+gem 'git_diff_parser'
 
 group :development do
   #gem 'better_errors'
@@ -38,9 +39,6 @@ group :development do
   gem 'html2haml'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'rb-fchange', require: false
-  gem 'rb-fsevent', require: false
-  gem 'rb-inotify', require: false
   gem 'spring-commands-rspec'
 end
 
@@ -60,4 +58,5 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'webmock'
 end
