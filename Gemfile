@@ -16,7 +16,7 @@ gem 'omniauth-bitbucket'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
-gem 'pronto', github: 'mmozuras/pronto'
+gem 'pronto', '~> 0.7.0'
 gem 'sidekiq'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sinatra', require: false, github: 'sinatra/sinatra'

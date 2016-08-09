@@ -1,16 +1,4 @@
 GIT
-  remote: git://github.com/mmozuras/pronto.git
-  revision: 89219d4a215e10f8d371b6c1d0322bcd111cee6f
-  specs:
-    pronto (0.6.0)
-      gitlab (~> 3.6, >= 3.4.0)
-      httparty (~> 0.13.7)
-      octokit (~> 4.3, >= 4.1.0)
-      rainbow (~> 2.1)
-      rugged (~> 0.24, >= 0.23.0)
-      thor (~> 0.19.0)
-
-GIT
   remote: git://github.com/sinatra/sinatra.git
   revision: a5da6fa82c46436f59ae482d07c1752ab908c852
   specs:
@@ -219,6 +207,13 @@ GEM
     pkg-config (1.1.7)
     powerpack (0.1.1)
     private_attr (1.1.0)
+    pronto (0.7.0)
+      gitlab (~> 3.6, >= 3.4.0)
+      httparty (~> 0.13.7)
+      octokit (~> 4.3, >= 4.1.0)
+      rainbow (~> 2.1)
+      rugged (~> 0.24, >= 0.23.0)
+      thor (~> 0.19.0)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -339,7 +334,7 @@ GEM
     sshkit (1.8.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    terminal-table (1.5.2)
+    terminal-table (1.6.0)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (2.0.2)
@@ -403,7 +398,7 @@ DEPENDENCIES
   omniauth-github
   omniauth-gitlab
   pg
-  pronto!
+  pronto (~> 0.7.0)
   pry-rails
   pry-rescue
   pundit
