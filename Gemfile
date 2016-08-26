@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
-gem 'rails', '5.0.0'
+gem 'rails', '5.0.0.1'
 gem 'sass-rails', '5.0.5'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
@@ -16,10 +16,10 @@ gem 'omniauth-bitbucket'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
-gem 'pronto', '~> 0.7.0'
-gem 'sidekiq'
+gem 'pronto', '~> 0.7.1'
+gem 'sidekiq', '~> 4.1', '>= 4.1.4'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'sinatra', require: false, github: 'sinatra/sinatra'
+gem 'sinatra', '~> 2.0.0.beta2'
 gem 'git_diff_parser'
 
 group :development do
